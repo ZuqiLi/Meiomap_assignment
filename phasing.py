@@ -9,7 +9,7 @@ trio2 = {'PB1': [], 'PB2': [], 'egg': []}
 trio3 = {'PB1': [], 'PB2': [], 'egg': []}
 trio4 = {'PB1': [], 'PB2': [], 'egg': []}
 # read in the input file and store all variables
-with open("F:\\courses\\Thesis\\PythonProject\\input_data_trios.txt", 'r') as f:
+with open("F:\\input_data_trios.txt", 'r') as f:
     f.readline()
     for line in f:
         var = line.strip().split()
@@ -39,7 +39,7 @@ for n in range(len(trios)):
     # loop over every cell in the trio
     for ctype in ctypes:
         # open the file for output
-        url = "F:\\courses\\Thesis\\PythonProject\\output_trio" + str(n + 1) + "_" + ctype + ".bed"
+        url = "F:\\output_trio" + str(n + 1) + "_" + ctype + ".bed"
         f = open(url, 'w')
 
         # initialize variables
